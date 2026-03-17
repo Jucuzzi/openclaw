@@ -972,6 +972,7 @@
 			packageReferences = (
 				6CFD2DF2B4DEA2491528B68C /* XCLocalSwiftPackageReference "../shared/OpenClawKit" */,
 				54640EBE5B7867B3CDFC94B5 /* XCLocalSwiftPackageReference "../../Swabble" */,
+				2B82872B2F695BE5005248CD /* XCRemoteSwiftPackageReference "SwiftFormat" */,
 			);
 			projectDirPath = "";
 			projectRoot = "";
@@ -1757,6 +1758,17 @@
 			relativePath = ../shared/OpenClawKit;
 		};
 /* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B82872B2F695BE5005248CD /* XCRemoteSwiftPackageReference "SwiftFormat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nicklockwood/SwiftFormat";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.60.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		473C082A8AEFF8D021FC9AC1 /* OpenClawChatUI */ = {
