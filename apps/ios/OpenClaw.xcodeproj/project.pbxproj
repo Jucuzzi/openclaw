@@ -1054,7 +1054,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -euo pipefail\nexport PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"\nif ! command -v swiftformat >/dev/null 2>&1; then\n  echo \"error: swiftformat not found (brew install swiftformat)\" >&2\n  exit 1\nfi\nswiftformat --lint --config \"$SRCROOT/../../.swiftformat\" \\\n  --filelist \"$SRCROOT/SwiftSources.input.xcfilelist\"\n";
+			shellScript = "# 替换原来的 swiftformat 命令（适配 Xcode Cloud）\n\"${BUILD_DIR%Build/*}SourcePackages/checkouts/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}\"\nset -euo pipefail\nexport PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"\nif ! command -v swiftformat >/dev/null 2>&1; then\n  echo \"error: swiftformat not found (brew install swiftformat)\" >&2\n  exit 1\nfi\nswiftformat --lint --config \"$SRCROOT/../../.swiftformat\" \\\n  --filelist \"$SRCROOT/SwiftSources.input.xcfilelist\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
