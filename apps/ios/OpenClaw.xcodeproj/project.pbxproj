@@ -897,8 +897,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39F36ECD358A83E044E7DAED /* Build configuration list for PBXNativeTarget "OpenClaw" */;
 			buildPhases = (
-				6CF536C8541849FB6C8858A0 /* SwiftLint */,
 				95FCF3D88427FA53812DFBF0 /* Sources */,
+				6CF536C8541849FB6C8858A0 /* SwiftLint */,
 				C5D2570A9E62481E082662FF /* SwiftFormat (lint) */,
 				8A1FC046394F8831818546D7 /* Resources */,
 				629CD4ED100218268520B159 /* Frameworks */,
